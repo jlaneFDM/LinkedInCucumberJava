@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="1.054">
-    <testcase classname="Menu Management" name="Add a menu item" time="0.413">
-        <system-out><![CDATA[Given I have a menu item with name "Chicken Sandwich" a description "description" and price 15.passed
-When I add that menu item...................................................passed
-Then A menu item with the name "Chicken Sandwich" should be added...........passed
-Given I have a menu item with name "Cucumber Sandwich" a description "description" and price 20.passed
-When I add that menu item...................................................passed
-Then A menu item with the name "Cucumber Sandwich" should be added..........passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.751">
+    <testcase classname="Final Bill Calculation" name="Customer Bill Amount Calculation" time="0.078">
+        <system-out><![CDATA[Given I have a Customer.....................................................passed
+And user enters initial bill amount as 100.00...............................passed
+And sales tax rate is 1.10 percent..........................................passed
+Then final bill amount calculated is 110....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Menu Management" name="Add another menu item" time="0.056">
-        <system-out><![CDATA[Given I have a menu item with name "Chicken Sandwich" a description "description" and price 15.passed
-When I add that menu item...................................................passed
-Then A menu item with the name "Chicken Sandwich" should be added...........passed
-Given I have a menu item with name "Cucumber Salad" a description "description" and price 15.passed
-When I add that menu item...................................................passed
-Then A menu item with the name "Cucumber Salad" should be added.............passed
+    <testcase classname="Final Bill Calculation" name="Customer Bill Amount Calculation 2" time="0.006">
+        <system-out><![CDATA[Given I have a Customer.....................................................passed
+And user enters initial bill amount as 200.00...............................passed
+And sales tax rate is 1.08 percent..........................................passed
+Then final bill amount calculated is 216....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Menu Management" name="Add third menu item" time="0.16">
-        <system-out><![CDATA[Given I have a menu item with name "Chicken Sandwich" a description "description" and price 15.passed
-When I add that menu item...................................................passed
-Then A menu item with the name "Chicken Sandwich" should be added...........passed
-Given I have a menu item with name "Chicken Sandwich" a description "description" and price 15.passed
-When I add that menu item...................................................passed
-Then I should see an error message with value "Duplicate item"..............passed
+    <testcase classname="Final Bill Calculation" name="Customer Bill Amount Calculation 3" time="0">
+        <system-out><![CDATA[Given I have a Customer.....................................................passed
+And user enters initial bill amount as 100.00...............................passed
+And sales tax rate is 1.0155 percent........................................passed
+Then final bill amount calculated is 101.55.................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

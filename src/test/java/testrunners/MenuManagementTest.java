@@ -11,8 +11,9 @@ import org.junit.runner.RunWith;
         plugin = {  "pretty",
                     "html:target/SystemTestReports/html",
                     "json:target/SystemTestReports/json/report.json",
-                    "junit:target/SystemTestReports/junit/report.xml"   }
-        //tags = "not @NightlyBuildTest"
+                    "junit:target/SystemTestReports/junit/report.xml" },
+        tags = "@ScenarioOutlineExample"
 )
+
 public class MenuManagementTest {
 }
